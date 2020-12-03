@@ -15,6 +15,16 @@
     python manage.py migrate
     ```
 
+* Install Redis
+
+    https://redislabs.com/blog/redis-on-windows-8-1-and-previous-versions/
+    
+    Start Redis Server
+        
+    ```Python
+    redis-server
+    ```
+
 ### Usage
 
 * To Create Super User
@@ -27,4 +37,5 @@
 
     ``` python
     python manage.py runserver
+    celery -A project worker -l info
     ```
